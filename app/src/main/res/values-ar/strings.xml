@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name" translatable="false">Stock Hawk</string>
+    <string name="action_change_units">وحدات التغيير</string>
+    <string name="symbol_search">رمز البحث</string>
+    <string name="content_test">بحث عن الأوراق المالية رمز</string>
+    <string name="input_hint" translatable="false">FB</string>
+    <string name="input_prefill"></string>
+    <string name="network_toast">اه اوه! هذا التطبيق يتطلب اتصال  بالإنترنت</string>
+    <string name="empty_stock_list">لا يوجد مخزون معلومات متوفرة</string>
+    <string name="empty_stock_list_no_network">لا معلومات الأوراق المالية المتاحة . الشبكة غير متوفرة لجلب بيانات المخزون .</string>
+
+    <string name="open" translatable="false">OPEN</string>
+    <string name="mkt_cap" translatable="false">MKT CAP</string>
+    <string name="high" translatable="false">HIGH</string>
+    <string name="_52w_high" translatable="false">52W HIGH</string>
+    <string name="low" translatable="false">LOW</string>
+    <string name="_52w_low" translatable="false">52W LOW</string>
+    <string name="vol" translatable="false" >VOL</string>
+    <string name="avg_vol" translatable="false" >AVG VOL</string>
+    <string name="p_e" translatable="false" >P/E</string>
+    <string name="yield" translatable="false">YIELD</string>
+
+    <string name="title_widget_detail">تفاصيل StockHawk</string>
+    <string name="new_stock_add">Add new stock symbol</string>
+    <string name="stock_duplicate_msg">This stock is already saved!</string>
+    <string name="symbol_not_found">Error! symbol Not found</string>
+
+</resources>

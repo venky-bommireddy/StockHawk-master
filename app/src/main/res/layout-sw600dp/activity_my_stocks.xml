@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:divider="?android:attr/dividerHorizontal"
+    android:orientation="horizontal"
+    tools:context="com.sam_chordas.android.stockhawk.ui.MyStocksActivity">
+
+    <fragment
+        android:id="@+id/movie_grid"
+        android:name="com.sam_chordas.android.stockhawk.ui.MyStockFragment"
+        android:layout_width="@dimen/main_activity_child_width"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        tools:layout="@android:layout/list_content" />
+
+    <FrameLayout
+        android:id="@+id/stock_detail_container"
+        android:layout_width="@dimen/main_activity_child_width"
+        android:layout_height="match_parent"
+        android:layout_weight="4" />
+
+</LinearLayout>

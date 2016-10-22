@@ -1,0 +1,150 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context="com.sam_chordas.android.stockhawk.ui.DetailFragment"
+    android:orientation="vertical"
+    android:padding="@dimen/detail_layout_padding">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardElevation = "@dimen/detail_carview"
+        card_view:cardCornerRadius="@dimen/detail_carview"
+        card_view:contentPadding="@dimen/detail_carview" >
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*">
+            <TableRow
+                android:padding="@dimen/detail_carview"
+                android:layout_width="@dimen/detail_child_width" >
+                <TextView
+                    android:text="@string/open"
+                    android:contentDescription="@string/open"
+                    style="@style/WhiteText"
+                    android:gravity="start" />
+                <TextView
+                    android:id="@+id/open"
+                    style="@style/WhiteText"
+                    android:gravity="end" />
+                <TextView
+                    android:text="@string/mkt_cap"
+                    android:contentDescription="@string/market_cap"
+                    style="@style/WhiteText"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginStart="25dp" />
+                <TextView
+                    android:id="@+id/mkt_cap"
+                    style="@style/WhiteText"
+                    android:gravity="end" />
+            </TableRow>
+
+            <TableRow
+                android:padding="@dimen/detail_carview"
+                android:layout_width="@dimen/detail_child_width" >
+                <TextView
+                    style="@style/WhiteText"
+                    android:contentDescription="@string/day_s_high"
+                    android:text="@string/high" />
+                <TextView
+                    android:id="@+id/day_high"
+                    style="@style/WhiteText"
+                    android:gravity="end" />
+                <TextView
+                    android:text="@string/_52w_high"
+                    android:contentDescription="@string/_52_week_high"
+                    style="@style/WhiteText"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginStart="25dp" />
+                <TextView
+                    android:id="@+id/year_high"
+                    style="@style/WhiteText"
+                    android:gravity="end" />
+            </TableRow>
+            <TableRow
+                android:padding="@dimen/detail_carview"
+                android:layout_width="@dimen/detail_child_width" >
+                <TextView
+                    style="@style/WhiteText"
+                    android:contentDescription="@string/day_s_low"
+                    android:text="@string/low"/>
+                <TextView
+                    android:id="@+id/day_low"
+                    style="@style/WhiteText"
+                    android:gravity="end" />
+                <TextView
+                    android:text="@string/_52w_low"
+                    android:contentDescription="@string/_52_week_low"
+                    style="@style/WhiteText"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginStart="25dp" />
+                <TextView
+                    android:id="@+id/year_low"
+                    style="@style/WhiteText"
+                    android:gravity="end" />
+            </TableRow>
+            <TableRow
+                android:padding="@dimen/detail_carview"
+                android:layout_width="@dimen/detail_child_width" >
+                <TextView
+                    style="@style/WhiteText"
+                    android:contentDescription="@string/volume"
+                    android:text="@string/vol"/>
+                <TextView
+                    android:id="@+id/volume"
+                    style="@style/WhiteText"
+                    android:gravity="end" />
+                <TextView
+                    android:text="@string/avg_vol"
+                    android:contentDescription="@string/average_volume"
+                    style="@style/WhiteText"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginStart="25dp" />
+                <TextView
+                    android:id="@+id/avg_vol"
+                    style="@style/WhiteText"
+                    android:gravity="end" />
+            </TableRow>
+            <TableRow
+                android:padding="@dimen/detail_carview">
+                <TextView
+                    style="@style/WhiteText"
+                    android:contentDescription="@string/p_n_e_ratio"
+                    android:text="@string/p_e"/>
+                <TextView
+                    android:id="@+id/pneratio"
+                    style="@style/WhiteText"
+                    android:gravity="end" />
+                <TextView
+                    android:text="@string/yield"
+                    android:contentDescription="@string/yield"
+                    style="@style/WhiteText"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginStart="25dp" />
+                <TextView
+                    android:id="@+id/yield"
+                    style="@style/WhiteText"
+                    android:gravity="end" />
+            </TableRow>
+        </TableLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        card_view:cardElevation = "@dimen/detail_carview"
+        card_view:cardCornerRadius="@dimen/detail_carview"
+        card_view:contentPadding="@dimen/detail_carview">
+
+        <lecho.lib.hellocharts.view.LineChartView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="Price Graph"
+            android:id="@+id/graph" />
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
